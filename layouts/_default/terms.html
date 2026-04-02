@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="text-center py-20">
+  <h1 class="mb-8">{{ .Title }}</h1>
+  <ul class="list-none p-0">
+    {{ range .Data.Terms.ByCount }}
+    <li class="inline-block mx-4 my-2">
+      <a href="{{ .Page.Permalink }}" class="text-xl hover:opacity-70">
+        {{ .Name }} ({{ .Count }})
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}
