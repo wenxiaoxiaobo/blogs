@@ -1,0 +1,36 @@
+baseURL = '/'
+languageCode = 'zh-cn'
+title = '睡不醒的打工人'
+theme = 'hugo-paper'
+enableRobotsTXT = true
+enableGitInfo = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about"
+    weight = 3
+
+[params]
+  description = "睡不醒的打工人 - 记录生活与工作"
+  dateFormat = "2006-01-02"
+  mainSections = ["posts"]
+  color = 'linen'
+  name = '睡不醒的打工人'
+  bio = '一枚在城市中穿梭的普通人'
+
+[outputs]
+  home = ["HTML", "RSS"]
